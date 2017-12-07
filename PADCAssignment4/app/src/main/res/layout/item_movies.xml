@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_movie_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_movie_one"
+            >
+
+
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:src="@drawable/img_movie_one"
+                android:id="@+id/iv_movie_one"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_one_name"
+                android:text="Thor:Ragnarok"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/iv_movie_one"
+                android:textColor="@color/primary_text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_one_type"
+                android:text="(Action,Science Fiction,Adventure)"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_below="@id/tv_movie_one_name"
+                android:layout_toRightOf="@id/iv_movie_one"
+                android:textColor="@color/primary_text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_one_current_popularity"
+                android:text="Current Popularity"
+
+                android:textSize="16dp"
+                android:layout_below="@id/tv_movie_one_type"
+                android:layout_toRightOf="@id/iv_movie_one"
+                android:textColor="@color/primary_text"
+                />
+
+            <ImageView
+                android:id="@+id/iv_movie_one_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:scaleType="centerCrop"
+                android:tint="@color/primary_light"
+                android:src="@drawable/ic_favorite_black_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.5"
+                android:textSize="16sp"
+                android:textColor="@color/primary"
+                android:layout_alignTop="@id/iv_movie_one_rating"
+                android:layout_alignBottom="@id/iv_movie_one_rating"
+                android:layout_alignRight="@id/iv_movie_one_rating"
+                android:layout_alignLeft="@id/iv_movie_one_rating"
+                android:gravity="center"
+                android:textStyle="italic"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_movie_one_star_rating"
+                android:layout_below="@id/tv_movie_one_current_popularity"
+                android:layout_toRightOf="@id/iv_movie_one"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_one_star1"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_one_star2"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_one_star3"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_one_star4"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_one_star5"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_one_star6"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_one_star_half"
+                    android:src="@drawable/ic_star_half_black_24dp"
+                    android:tint="@color/primary"
+                    />
+
+
+            </LinearLayout>
+            <Button
+                android:foreground="@drawable/ripple_white"
+
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_movie_one_movie_overview"
+                android:text="Movie Overview"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_light"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/iv_movie_one"
+                android:background="@color/primary"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_movie_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_movie_two"
+            >
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:src="@drawable/img_movie_two"
+                android:id="@+id/iv_movie_two"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_two_name"
+                android:text="Justice League"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/iv_movie_two"
+                android:textColor="@color/primary_text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_two_type"
+                android:text="(Action,Science Fiction,Adventure)"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_below="@id/tv_movie_two_name"
+                android:layout_toRightOf="@id/iv_movie_two"
+                android:textColor="@color/primary_text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_two_current_popularity"
+                android:text="Current Popularity"
+
+                android:textSize="16dp"
+                android:layout_below="@id/tv_movie_two_type"
+                android:layout_toRightOf="@id/iv_movie_two"
+                android:textColor="@color/primary_text"
+                />
+            <ImageView
+                android:id="@+id/iv_movie_two_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:scaleType="centerCrop"
+                android:tint="@color/primary_light"
+                android:src="@drawable/ic_favorite_black_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.5"
+                android:textSize="16sp"
+                android:textColor="@color/primary"
+                android:layout_alignTop="@id/iv_movie_two_rating"
+                android:layout_alignBottom="@id/iv_movie_two_rating"
+                android:layout_alignRight="@id/iv_movie_two_rating"
+                android:layout_alignLeft="@id/iv_movie_two_rating"
+                android:gravity="center"
+                android:textStyle="italic"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_movie_two_star_rating"
+                android:layout_below="@id/tv_movie_two_current_popularity"
+                android:layout_toRightOf="@id/iv_movie_two"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_movie_two_star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_two_star2"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_two_star3"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_two_star4"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_two_star5"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_two_star6"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_two_star_half"
+                    android:src="@drawable/ic_star_half_black_24dp"
+                    android:tint="@color/primary"
+                    />
+
+
+            </LinearLayout>
+            <Button
+                android:foreground="@drawable/ripple_white"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_justice_league_movie_overview"
+                android:text="Movie Overview"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_light"
+                android:layout_alignBottom="@id/iv_movie_two"
+                android:layout_alignParentRight="true"
+                android:background="@color/primary"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_movie_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_movie_three"
+            >
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="220dp"
+                android:src="@drawable/img_movie_three"
+                android:id="@+id/iv_movie_three"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_three_name"
+                android:text="Power Ranger 2017"
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/iv_movie_three"
+                android:textColor="@color/primary_text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_three_type"
+                android:text="(Action,Science Fiction,Adventure)"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_below="@id/tv_movie_three_name"
+                android:layout_toRightOf="@id/iv_movie_three"
+                android:textColor="@color/primary_text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movie_three_current_popularity"
+                android:text="Current Popularity"
+
+                android:textSize="16dp"
+                android:layout_below="@id/tv_movie_three_type"
+                android:layout_toRightOf="@id/iv_movie_three"
+                android:textColor="@color/primary_text"
+                />
+            <ImageView
+                android:id="@+id/iv_movie_three_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:scaleType="centerCrop"
+                android:tint="@color/primary_light"
+                android:src="@drawable/ic_favorite_black_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.0"
+                android:textSize="16sp"
+                android:textColor="@color/primary"
+                android:layout_alignTop="@id/iv_movie_three_rating"
+                android:layout_alignBottom="@id/iv_movie_three_rating"
+                android:layout_alignRight="@id/iv_movie_three_rating"
+                android:layout_alignLeft="@id/iv_movie_three_rating"
+                android:gravity="center"
+                android:textStyle="italic"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_movie_three_star_rating"
+                android:layout_below="@id/tv_movie_three_current_popularity"
+                android:layout_toRightOf="@id/iv_movie_three"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_movie_three_star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_three_star2"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_three_star3"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_three_star4"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_three_star5"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_three_star6"
+                    android:src="@drawable/ic_star_black_24dp"
+                    android:tint="@color/primary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_movie_three_star_half"
+                    android:src="@drawable/ic_star_half_black_24dp"
+                    android:tint="@color/primary"
+                    />
+
+
+            </LinearLayout>
+            <Button
+                android:foreground="@drawable/ripple_white"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_movie_three_movie_overview"
+                android:text="Movie Overview"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_light"
+                android:layout_alignBottom="@id/iv_movie_three"
+                android:layout_alignParentRight="true"
+                android:background="@color/primary"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
