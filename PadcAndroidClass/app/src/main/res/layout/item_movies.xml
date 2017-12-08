@@ -156,7 +156,7 @@
                 android:textColor="@color/primary_light"
                 android:layout_alignParentRight="true"
                 android:layout_alignBottom="@id/iv_movie_one"
-                android:background="@color/primary"/>
+                android:background="@drawable/rounded_button"/>
 
 
 
@@ -313,7 +313,7 @@
                 android:textColor="@color/primary_light"
                 android:layout_alignBottom="@id/iv_movie_two"
                 android:layout_alignParentRight="true"
-                android:background="@color/primary"/>
+                android:background="@drawable/rounded_button"/>
 
 
         </RelativeLayout>
@@ -462,7 +462,7 @@
                 android:textColor="@color/primary_light"
                 android:layout_alignBottom="@id/iv_movie_three"
                 android:layout_alignParentRight="true"
-                android:background="@color/primary"/>
+                android:background="@drawable/rounded_button"/>
 
 
         </RelativeLayout>
